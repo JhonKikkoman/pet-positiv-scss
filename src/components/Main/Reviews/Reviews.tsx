@@ -13,7 +13,7 @@ export default function Reviews(): React.JSX.Element {
             <ul className="reviews__slider-list">
               {Array(5)
                 .fill(null)
-                .map((el, index) => (
+                .map((_, index) => (
                   <li key={index} className="reviews__slider-item">
                     <blockquote className="review-card">
                       <div className="review-card__body">

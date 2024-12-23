@@ -26,7 +26,7 @@ export default function Pagination(): React.JSX.Element {
         <ul className="pagination__list">
           {Array(5)
             .fill(null)
-            .map((el, index) => (
+            .map((_, index) => (
               <li key={index} className="pagination__item">
                 <button
                   className={`pagination__button ${index === 0 ? 'is-current' : ''}`}
