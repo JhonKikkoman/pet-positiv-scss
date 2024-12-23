@@ -18,7 +18,7 @@ export default function HeroItem({
   return (
     <li className="hero__partners-item">
       <img
-        src={`../src/css/images/partners/${logoName}-logo.svg`}
+        src={`./src/css/images/partners/${logoName}-logo.svg`}
         alt={logoName}
         className="hero__partners-image"
         width="130"

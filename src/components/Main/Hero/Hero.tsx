@@ -33,7 +33,7 @@ export default function Hero(): React.JSX.Element {
               </div>
             </div>
             <img
-              src="../src/css/images/Illustration.svg"
+              src="./src/css/images/Illustration.svg"
               alt="hero-image"
               className="hero__image"
               width="600"
