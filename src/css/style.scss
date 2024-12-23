@@ -1,0 +1,43 @@
+@use './styles/fonts';
+@use './styles/globals';
+@use './styles/media';
+@use './styles/mixins';
+@use './styles/normalize';
+@use './styles/utils';
+@use './styles/variables';
+
+@use './styles/blocks/section';
+@use './styles/blocks/grid';
+@use './styles/blocks/button';
+@use './styles/blocks/puddle-bg';
+
+@use './styles/blocks/Header/header';
+@use './styles/blocks/Header/burger-button';
+@use './styles/blocks/Header/cross-button';
+@use './styles/blocks/Header/mobile-overlay';
+
+@use './styles/blocks/Main/Hero/hero';
+
+@use './styles/blocks/Main/Services/services';
+@use './styles/blocks/Main/Services/services-card';
+@use './styles/blocks/Main/Services/banner';
+
+@use './styles/blocks/Main/Studies/studies';
+
+@use './styles/blocks/Main/Process/process';
+
+@use './styles/blocks/Main/Team/team';
+@use './styles/blocks/Main/Team/team-card';
+
+@use './styles/blocks/Main/Reviews/reviews';
+@use './styles/blocks/Main/Reviews/review-card';
+@use './styles/blocks/Main/Reviews/pagination';
+
+@use './styles/blocks/Main/ContactUs/field';
+@use './styles/blocks/Main/ContactUs/radio';
+@use './styles/blocks/Main/ContactUs/radios';
+@use './styles/blocks/Main/ContactUs/contact-us';
+
+@use './styles/blocks/Footer/footer';
+@use './styles/blocks/Footer/subscribe-form';
+@use './styles/blocks/Footer/soc1als';

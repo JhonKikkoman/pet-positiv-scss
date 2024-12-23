@@ -1,0 +1,103 @@
+@use '../../../mixins';
+@use '../../../media';
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  min-height: 310px;
+  padding: 50px;
+  background-color: var(--color-gray);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+
+  @include media.mobile {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 27px;
+  }
+
+  &--accent-bg {
+    background-color: var(--color-accent);
+  }
+
+  &--dark-bg {
+    background-color: var(--color-dark);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+
+    @include media.mobile {
+      display: contents;
+    }
+  }
+
+  &__image {
+    align-self: center;
+
+    @include media.desktop {
+      max-width: 50%;
+      height: auto;
+    }
+
+    @include media.mobile {
+      max-width: 165px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @include media.mobile {
+      grid-column: -1 / 1;
+    }
+  }
+
+  &__link {
+    --serviceCardLinkIconColor: var(--color-accent);
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 20px;
+
+    @include media.hover {
+      opacity: 0.7;
+    }
+
+    @include media.mobile {
+      align-self: end;
+    }
+
+    &--light {
+      --serviceCardLinkIconColor: var(--color-dark);
+
+      color: var(--color-light);
+    }
+
+    &-icon-wrapper {
+      @include mixins.flex-center;
+      @include mixins.square(41px);
+
+      background-color: currentColor;
+      border-radius: 50%;
+
+      svg {
+        color: var(--serviceCardLinkIconColor);
+      }
+    }
+
+    &-label {
+      @include media.mobile {
+        @include mixins.visually-hidden;
+      }
+    }
+  }
+}

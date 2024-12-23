@@ -1,0 +1,16 @@
+@use '../../../media';
+
+.services {
+  &__list {
+    --gridColumns: 3;
+
+    &:not(:last-child) {
+      margin-bottom: 100px;
+
+      @include media.mobile {
+        --gridColumns: 1;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
