@@ -15,7 +15,7 @@ export default function FooterNav(): React.JSX.Element {
     <div className="footer__navigation">
       <a href="/" className="footer__logo logo">
         <img
-          src="../src/css/images/logo-light.svg"
+          src="/src/css/images/logo-light.svg"
           alt="positivus"
           className="logo__image"
           width="180"

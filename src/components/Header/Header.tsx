@@ -9,7 +9,7 @@ export default function Header(): React.JSX.Element {
       <div className="header__inner container">
         <a href="/" className="header__logo logo">
           <img
-            src="../src/css/images/logo.svg"
+            src="/src/css/images/logo.svg"
             alt="positivus"
             className="logo__image"
             width="220"

@@ -17,7 +17,7 @@ export default function ServiceBanner(): React.JSX.Element {
           </button>
         </div>
         <img
-          src="../src/css/images/banner-bg.svg"
+          src="/src/css/images/banner-bg.svg"
           alt=""
           className="banner__image hidden-mobile"
           width="493"

@@ -21,7 +21,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="../src/css/images/services/1.svg"
+                  src="/src/css/images/services/1.svg"
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -44,7 +44,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="../src/css/images/services/2.svg"
+                  src="/src/css/images/services/2.svg"
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -68,7 +68,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem className="service-card__link--light" />
                 </div>
                 <img
-                  src="../src/css/images/services/3.svg"
+                  src="/src/css/images/services/3.svg"
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -87,7 +87,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="../src/css/images/services/4.svg"
+                  src="/src/css/images/services/4.svg"
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -106,7 +106,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="../src/css/images/services/5.svg"
+                  src="/src/css/images/services/5.svg"
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -125,7 +125,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem className="service-card__link--light" />
                 </div>
                 <img
-                  src="../src/css/images/services/6.svg"
+                  src="/src/css/images/services/6.svg"
                   alt=""
                   className="service-card__image"
                   width="210"

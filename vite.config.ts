@@ -5,5 +5,25 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: './',
   plugins: [react()],
-  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],
+  resolve: {
+    alias: {
+      '@css': '/src/css',
+    },
+  },
+  build: {
+    assetsDir: '',
+    rollupOptions: {
+      input: {
+        main: '/src/main.tsx', // Основной входной файл
+      },
+      output: {
+        assetFileNames: assetInfo => {
+          if (/\.(woff2?|ttf|eot|otf)$/i.test(assetInfo.name ?? '')) {
+            return 'css/fonts/[name][extname]';
+          }
+          return '[name][extname]';
+        },
+      },
+    },
+  },
 });

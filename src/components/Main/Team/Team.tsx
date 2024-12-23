@@ -66,7 +66,7 @@ export default function Team(): React.JSX.Element {
                 <article className="team-card">
                   <header className="team-card__header">
                     <img
-                      src={`../src/css/images/team/${item.photo}.svg`}
+                      src={`/src/css/images/team/${item.photo}.svg`}
                       alt="photo"
                       className="team-card__image"
                       width="100"

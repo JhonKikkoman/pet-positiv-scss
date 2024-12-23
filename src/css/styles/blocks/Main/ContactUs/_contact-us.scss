@@ -21,7 +21,7 @@
     height: calc(100% - var(--contactUsImageOffsetY) * 2);
     aspect-ratio: 1;
 
-    background: url('./src/css/images/contact-us-bg.svg') center/contain
+    background: url('/src/css/images/contact-us-bg.svg') center/contain
       no-repeat;
 
     @include media.tablet {
