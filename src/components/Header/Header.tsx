@@ -1,5 +1,6 @@
 import React from 'react';
 
+import logo from '../../css/images/logo.svg';
 import BurgerMenu from './BurgerMenu';
 import Nav from './Nav';
 
@@ -9,7 +10,7 @@ export default function Header(): React.JSX.Element {
       <div className="header__inner container">
         <a href="/" className="header__logo logo">
           <img
-            src="/src/css/images/logo.svg"
+            src={logo}
             alt="positivus"
             className="logo__image"
             width="220"

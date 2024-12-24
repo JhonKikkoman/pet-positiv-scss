@@ -4,6 +4,12 @@ import LinkItem from './LinkItem';
 import ServiceBanner from './ServiceBanner';
 import ServiceHeader from './ServiceHeader';
 
+const servicePhoto = Object.keys(
+  import.meta.glob('/src/css/images/services/*.svg', {
+    query: 'url',
+  }),
+);
+
 export default function Services(): React.JSX.Element {
   return (
     <section className="section container">
@@ -21,7 +27,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="/src/css/images/services/1.svg"
+                  src={servicePhoto[0]}
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -44,7 +50,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="/src/css/images/services/2.svg"
+                  src={servicePhoto[1]}
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -68,7 +74,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem className="service-card__link--light" />
                 </div>
                 <img
-                  src="/src/css/images/services/3.svg"
+                  src={servicePhoto[2]}
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -87,7 +93,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="/src/css/images/services/4.svg"
+                  src={servicePhoto[3]}
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -106,7 +112,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem />
                 </div>
                 <img
-                  src="/src/css/images/services/5.svg"
+                  src={servicePhoto[4]}
                   alt=""
                   className="service-card__image"
                   width="210"
@@ -125,7 +131,7 @@ export default function Services(): React.JSX.Element {
                   <LinkItem className="service-card__link--light" />
                 </div>
                 <img
-                  src="/src/css/images/services/6.svg"
+                  src={servicePhoto[5]}
                   alt=""
                   className="service-card__image"
                   width="210"

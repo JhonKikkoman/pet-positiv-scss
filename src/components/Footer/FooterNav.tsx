@@ -1,5 +1,7 @@
 import React from 'react';
 
+import logoLight from '../../css/images/logo-light.svg';
+
 type arrNavLinkTitleT = { title: string };
 
 const arrNavLinkTitle: arrNavLinkTitleT[] = [
@@ -15,7 +17,7 @@ export default function FooterNav(): React.JSX.Element {
     <div className="footer__navigation">
       <a href="/" className="footer__logo logo">
         <img
-          src="/src/css/images/logo-light.svg"
+          src={logoLight}
           alt="positivus"
           className="logo__image"
           width="180"

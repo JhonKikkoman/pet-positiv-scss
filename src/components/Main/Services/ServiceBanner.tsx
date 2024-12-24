@@ -1,5 +1,7 @@
 import React from 'react';
 
+import bannerBg from '../../../css/images/banner-bg.svg';
+
 export default function ServiceBanner(): React.JSX.Element {
   return (
     <div className="services__banner banner">
@@ -17,7 +19,7 @@ export default function ServiceBanner(): React.JSX.Element {
           </button>
         </div>
         <img
-          src="/src/css/images/banner-bg.svg"
+          src={bannerBg}
           alt=""
           className="banner__image hidden-mobile"
           width="493"

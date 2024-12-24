@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Item, { logoNameT } from './HeroItem';
+import illustration from '../../../css/images/Illustration.svg';
 
-const arrLogo: logoNameT[] = [
-  'amazon',
-  'dribble',
-  'hubSpot',
-  'netflix',
-  'notion',
-  'zoom',
-];
+const heroLogoArr = Object.keys(
+  import.meta.glob('/src/css/images/partners/*.svg', {
+    query: 'url',
+  }),
+);
 
 export default function Hero(): React.JSX.Element {
   return (
@@ -33,7 +30,7 @@ export default function Hero(): React.JSX.Element {
               </div>
             </div>
             <img
-              src="/src/css/images/Illustration.svg"
+              src={illustration}
               alt="hero-image"
               className="hero__image"
               width="600"
@@ -44,8 +41,17 @@ export default function Hero(): React.JSX.Element {
           <div className="hero__partners">
             <ul className="hero__partners-list">
               <h2 className="visually-hidden">Our partners</h2>
-              {arrLogo.map((logo, index) => (
-                <Item key={`${logo}+${index}`} logoName={logo} />
+              {heroLogoArr.map((src, index) => (
+                <li key={index} className="hero__partners-item">
+                  <img
+                    src={src}
+                    alt="logo"
+                    className="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
               ))}
             </ul>
           </div>

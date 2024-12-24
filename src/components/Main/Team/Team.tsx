@@ -6,7 +6,6 @@ interface dataArrI {
   name: string;
   post: string;
   content: string;
-  photo: number;
 }
 
 const dataArr: dataArrI[] = [
@@ -15,44 +14,42 @@ const dataArr: dataArrI[] = [
     post: 'CEO and Founder',
     content:
       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    photo: 1,
   },
   {
     name: 'Jane Doe',
     post: 'Director of Operations',
     content:
       '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
-    photo: 2,
   },
   {
     name: 'Michael Brown',
     post: 'Senior SEO Specialist',
     content:
       '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
-    photo: 3,
   },
   {
     name: 'Emily Johnson',
     post: 'PPC Manager',
     content:
       '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
-    photo: 4,
   },
   {
     name: 'Brian Williams',
     post: 'Social Media Specialist',
     content:
       '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
-    photo: 5,
   },
   {
     name: 'Sarah Kim',
     post: 'Content Creator',
     content:
       '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for variousindustries',
-    photo: 6,
   },
 ];
+
+const teamPhoto = Object.keys(
+  import.meta.glob('/src/css/images/team/*.svg', { query: 'url' }),
+);
 
 export default function Team(): React.JSX.Element {
   return (
@@ -66,7 +63,7 @@ export default function Team(): React.JSX.Element {
                 <article className="team-card">
                   <header className="team-card__header">
                     <img
-                      src={`/src/css/images/team/${item.photo}.svg`}
+                      src={teamPhoto[index]}
                       alt="photo"
                       className="team-card__image"
                       width="100"
