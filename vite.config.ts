@@ -14,9 +14,9 @@ export default defineConfig({
   build: {
     assetsDir: '',
     rollupOptions: {
-      input: {
-        main: '/src/main.tsx', // Основной входной файл
-      },
+      // input: {
+      //   main: '/src/main.tsx', // Основной входной файл
+      // },
       output: {
         assetFileNames: assetInfo => {
           if (/\.(woff2?|ttf|eot|otf)$/i.test(assetInfo.name ?? '')) {
