@@ -20,15 +20,6 @@ export default defineConfig({
   //         if (/\.(woff2?|ttf|eot|otf)$/i.test(assetInfo.name ?? '')) {
   //           return 'src/css/fonts/[name][extname]';
   //         }
-
-  //         // if (/src\/css\/images\/partners\/$/i.test(assetInfo.name ?? '')) {
-  //         //   return 'src/css/images/partners/[name][extname]';
-  //         // }
-
-  //         // if (/\.(png|jpe?g|gif|svg|webp)$/i.test(assetInfo.name ?? '')) {
-  //         //   return 'src/css/images/[name][extname]';
-  //         // }
-
   //         return '[name][extname]';
   //       },
   //     },

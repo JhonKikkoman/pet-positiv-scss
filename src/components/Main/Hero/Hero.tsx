@@ -10,7 +10,7 @@ const heroLogoArr = Object.keys(
 
 export default function Hero(): React.JSX.Element {
   return (
-    <section className="section section-hidden-x container">
+    <section className="section section--hidden-x container">
       <div className="section__body">
         <div className="hero">
           <div className="hero__main">
